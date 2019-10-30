@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+  <html lang="pt-br" dir="ltr">
+      <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../rio-gastronomia/style-rio-gastronomia.css">
+        <link rel="stylesheet" href="../rio-gastronomia/style-scrollbar.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <style>
+        .dropdown-content {
+          display: none;
+        }
+        /* @media (min-width: 800px) {  AINDA FICA ESTRANHO
+          .wrapper {
+            grid-template-columns: 1fr 5fr 1fr;
+            grid-template-rows: minmax(100px, auto);
+            grid-template-areas:
+              "header     header    header"
+              "content    content   content"
+              "nav          nav       nav"
+              "modif    modif     modif"
+              "sidebar sidebar sidebar"
+              "patroci    patroci   patroci"
+              "footer     footer    footer"
+          }
+        } */
+        </style>
+
+      </head>
+      <body>
+        <div class="wrapper">
+          <!-- Inicio:Header -->
+          <header class="main-head" style="background-color:#9e0000">
+            <div class="head-left"><a href="#default" class="menu-btn"><button id="openNav" class="button"style="width:100%;height:100%;" onclick="jsOpen()">&#9776;</button></a></div>
+            <div class="head-center"><a href="../rio-gastronomia/home.html"><image src="../rio-gastronomia/imgs/RIO GASTRONOMIA.png" style="height:70px;"></a></div>
+            <div class="head-right">
+                <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a target="_blank" href="https://www.instagram.com/?hl=pt-br"><i class="fab fa-instagram fa-2x" ></i></a>
+                <a target="_blank" href="#"><i class="fab fa-whatsapp-square fa-2x"></i></a>
+                <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href="#"><i class="fas fa-phone-square fa-2x"></i></a>
+                <a href="#"><i class="fas fa-envelope-square fa-2x"></i></a>
+            </div>
+          </header>
+          <!-- Fim:Header -->
+
+
+          <article class="content galeria-principal" id="mainContent">
+            <!-- Início:Galeria Principal -->
+             <div id="slide" >
+               <div class="slideshow-container card borda-rad-tops" style="border-radius: 10px;">
+                 <h2 class="red sombra-in borda-rad-tops">Rio Gastronomia</h2>
+
+               <div class="mySlides fade" >
+                 <div id="slide-princi-01" class="backg-img">
+                   <div class="red-claro dia-card">17 A 26 AGO<br><span style="border-top:1px solid #e5e5e5;">Armazéns 3 e 4<br> Pier Mauá</span></div>
+                 </div>
+                  <div class="borda-rad-bottom red sombra-in">O maior evento de gastronomia no local mais charmoso da cidade!</div>
+              </div>
+
+               <div class="mySlides fade">
+                 <div class="backg-img" id="slide-princi-02">
+                   <div class="red-claro dia-card">17 A 26 AGO<br><span style="border-top:1px solid #e5e5e5;">Armazéns 3 e 4<br> Pier Mauá</span></div>
+                 </div>
+                <div class="borda-rad-bottom red sombra-in">Ambiente amplo</div>
+              </div>
+
+               <div class="mySlides fade"><div class="backg-img" id="slide-princi-03">
+                 <div class="red-claro dia-card">17 A 26 AGO<br><span style="border-top:1px solid #e5e5e5;">Armazéns 3 e 4<br> Pier Mauá</span></div>
+               </div>
+                <div class="borda-rad-bottom red sombra-in">Receitas saborosas</div>
+              </div>
+
+                 <div class="mySlides fade">
+                   <div class="backg-img" id="slide-princi-04">
+                     <div class="red-claro dia-card">17 A 26 AGO<br><span style="border-top:1px solid #e5e5e5;">Armazéns 3 e 4<br> Pier Mauá</span></div>
+                 </div>
+                   <div class="borda-rad-bottom red sombra-in">ÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊ</div>
+                 </div>
+               <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                   <div style="text-align:center;">
+                     <span class="dot" onclick="currentSlide(1)"></span>
+                     <span class="dot" onclick="currentSlide(2)"></span>
+                     <span class="dot" onclick="currentSlide(3)"></span>
+                     <span class="dot" onclick="currentSlide(4)"></span>
+                   </div>
+              </div>
+            </div>  <!-- Fim id="slide" -->
+                <br><img src="../rio-gastronomia/imgs/Divisoria01.png" style="width: 100%;">
+           <script src="jsSlideAutomatico.js" type="text/javascript"></script>
+          </article>
+
+          <nav class="main-nav link-none" style="bottom:0;" id="mainNav">
+            <div class="countdown text-sombra red border-1010" style=""><span id="demo"></span></div>
+            <script src="w3Countdown.js" type="text/javascript"></script>
+              <ul class="borda-1010">
+                <a href="../rio-gastronomia/evento.html">Evento</a>
+                <a href="../rio-gastronomia/localizacao.html">Localização</a>
+                <a href="../rio-gastronomia/ajuda.html">Ajuda</a>
+              </ul>
+          </nav>
+
+          <aside class="side card" id="mainSide">
+            <h1 class="cor_evento">Localização</h1>
+            <p>Av. Rodrigues Alves, 10 - Gamboa, Rio de Janeiro - RJ</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14702.143108948363!2d-43.1876471!3d-22.893601!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c097a6f4bc71e39!2sRio+Gastronomia+2017!5e0!3m2!1spt-BR!2sbr!4v1530409447398" width="100%" height="80%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14702.143108948363!2d-43.1876471!3d-22.893601!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c097a6f4bc71e39!2sRio+Gastronomia+2017!5e0!3m2!1spt-BR!2sbr!4v1530192686385" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen></iframe> -->
+          </aside>
+
+            <!--          O AJUDA VAI AQUI        -->
+            <div class="modif" style="padding:25px" id="mainModif">
+              <h2 class="borda-1010 red" style="margin:10px; text-align:center;">Sobre o Evento ou palestrantes</h2>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <br>
+              <div class="contain-perg-resp" style="width:50%;">
+                <ul class="perg-resp" style="float:left;">
+                  <div class="dropdown">
+                    <button class="dropbtn" onclick ="dropDown01()">PERGUNTA 1</button>
+                    <div class="dropdown-content" id="dropContent01">
+                      <button class="dropbtn" onclick ="dropClose()">Fechar</button>
+                      <p>RESPOSTA</p>
+                      <p>RESPOSTA</p>
+                      <p>RESPOSTA</p>
+                      <p>RESPOSTA</p>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn" onclick ="dropDown02()">PERGUNTA 2</button>
+                    <div class="dropdown-content" id="dropContent02">
+                      <button class="dropbtn" onclick ="dropClose()">Fechar</button>
+                      <p>RESPOSTA</p>
+                      <p>RESPOSTA</p>
+                      <p>RESPOSTA</p>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn" onclick ="dropDown03()">PERGUNTA 3</button>
+                    <div class="dropdown-content" id="dropContent03">
+                      <button class="dropbtn" onclick ="dropClose()">Fechar</button>
+                      <p>RESPOSTA</p>
+                      <p>RESPOSTA</p>
+                      <p>RESPOSTA</p>
+                    </div>
+                  </div>
+                </ul>
+                <ul class="perg-resp" style="float:right">
+                  <div class="dropdown">
+                    <button class="dropbtn" onclick ="dropDown04()">PERGUNTA 1</button>
+                    <div class="dropdown-content" id="dropContent04">
+                      <button class="dropbtn" onclick ="dropClose()">Fechar</button>
+                      <p>RESPOSTA</p>
+                      <p>RESPOSTA</p>
+                      <p>RESPOSTA</p>
+                      <p>RESPOSTA</p>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn" onclick ="dropDown05()">PERGUNTA 2</button>
+                    <div class="dropdown-content" id="dropContent05">
+                      <button class="dropbtn" onclick ="dropClose()">Fechar</button>
+                      <p>RESPOSTA</p>
+                      <p>RESPOSTA</p>
+                      <p>RESPOSTA</p>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn" onclick ="dropDown06()">PERGUNTA 3</button>
+                    <div class="dropdown-content" id="dropContent06">
+                      <button class="dropbtn" onclick ="dropClose()">Fechar</button>
+                      <p>RESPOSTA</p>
+                      <p>RESPOSTA</p>
+                      <p>RESPOSTA</p>
+                    </div>
+                  </div>
+                </ul>
+            </div>
+            <script type="text/javascript">
+            document.getElementById("mainContent").addEventListener('click', dropClose);
+            document.getElementById("mainNav").addEventListener('click', dropClose);
+            document.getElementById("mainSide").addEventListener('click', dropClose);
+            // document.getElementById("mainPatroci").addEventListener('click', dropClose);
+            // document.getElementById("mainFooter").addEventListener('click', dropClose);
+            // nao sei ainda como por todos em um
+              function dropDown01() {
+                document.getElementById('dropContent01').style.display = "block"
+                document.getElementById('dropContent01').style.width = "50%"
+                document.getElementById('dropContent02').style.display = "none"
+                document.getElementById('dropContent03').style.display = "none"
+                document.getElementById('dropContent04').style.display = "none"
+                document.getElementById('dropContent05').style.display = "none"
+                document.getElementById('dropContent06').style.display = "none"
+              }
+              function dropDown02() {
+                document.getElementById('dropContent01').style.display = "none"
+                document.getElementById('dropContent02').style.display = "block"
+                document.getElementById('dropContent02').style.width = "50%"
+                document.getElementById('dropContent03').style.display = "none"
+                document.getElementById('dropContent04').style.display = "none"
+                document.getElementById('dropContent05').style.display = "none"
+                document.getElementById('dropContent06').style.display = "none"
+              }
+              function dropDown03() {
+                document.getElementById('dropContent01').style.display = "none"
+                document.getElementById('dropContent02').style.display = "none"
+                document.getElementById('dropContent03').style.display = "block"
+                document.getElementById('dropContent03').style.width = "50%"
+                document.getElementById('dropContent04').style.display = "none"
+                document.getElementById('dropContent05').style.display = "none"
+                document.getElementById('dropContent06').style.display = "none"
+              }
+              function dropDown04() {
+                document.getElementById('dropContent01').style.display = "none"
+                document.getElementById('dropContent02').style.display = "none"
+                document.getElementById('dropContent03').style.display = "none"
+                document.getElementById('dropContent04').style.display = "block"
+                document.getElementById('dropContent04').style.width = "50%"
+                document.getElementById('dropContent05').style.display = "none"
+                document.getElementById('dropContent06').style.display = "none"
+              }
+              function dropDown05() {
+                document.getElementById('dropContent01').style.display = "none"
+                document.getElementById('dropContent02').style.display = "none"
+                document.getElementById('dropContent03').style.display = "none"
+                document.getElementById('dropContent04').style.display = "none"
+                document.getElementById('dropContent05').style.display = "block"
+                document.getElementById('dropContent05').style.width = "50%"
+                document.getElementById('dropContent06').style.display = "none"
+              }
+              function dropDown06() {
+                document.getElementById('dropContent01').style.display = "none"
+                document.getElementById('dropContent02').style.display = "none"
+                document.getElementById('dropContent03').style.display = "none"
+                document.getElementById('dropContent04').style.display = "none"
+                document.getElementById('dropContent05').style.display = "none"
+                document.getElementById('dropContent06').style.display = "block"
+                document.getElementById('dropContent06').style.width = "50%"
+              }
+              // um close pra todos por enquanto
+              function dropClose() {
+                document.getElementById('dropContent01').style.display = "none"
+                document.getElementById('dropContent02').style.display = "none"
+                document.getElementById('dropContent03').style.display = "none"
+                document.getElementById('dropContent04').style.display = "none"
+                document.getElementById('dropContent05').style.display = "none"
+                document.getElementById('dropContent06').style.display = "none"
+              }
+            </script>
+
+
+            </div>
+
+          <div class="patrocinador" id="mainPatroci">
+                <img src="../rio-gastronomia/imgs/Divisoria01.png" style="width: 100%;">
+              <h2 class="cor_evento">Apresentação</h2>
+              <div class="pat">
+                  <a href="http://www.fecomercio-rj.org.br/" target="_blank"><img title="Fecomércio" alt="Fecomércio" src="http://oglobo-eventos.s3.amazonaws.com/evt_upload_statics/11/patrocinador/117/fecomerciomenor.png"></a>
+                  <a href="http://www.sescrio.org.br/" target="_blank"><img title="Sesc" alt="Sesc" src="http://oglobo-eventos.s3.amazonaws.com/evt_upload_statics/11/patrocinador/118/sescmenor.png"></a>
+                  <a href="http://www.rj.senac.br/" target="_blank"><img title="Senac" alt="Senac" src="http://oglobo-eventos.s3.amazonaws.com/evt_upload_statics/11/patrocinador/119/senacmenor.png"></a>
+              </div>
+            <!-- <img src="../rio-gastronomia/Divisoria01.png" style="width: 100%;"> -->
+              <div class="patrocinador">
+                <h2 class="cor_evento">Patrocínio Master</h2>
+                    <a href="https://www.santander.com.br/" target="_blank"><img title="Santander" alt="Santander" src="http://oglobo-eventos.s3.amazonaws.com/evt_upload_statics/11/patrocinador/101/Santander.png"></a>
+                    <a href="http://www.claro.com.br/" target="_blank"><img title="Claro" alt="Claro" src="http://oglobo-eventos.s3.amazonaws.com/evt_upload_statics/11/patrocinador/120/claromenor2.png"></a>
+                    <a href="https://www.gasnaturalfenosa.com.br/" target="_blank"><img title="CEG" alt="CEG" src="http://oglobo-eventos.s3.amazonaws.com/evt_upload_statics/11/patrocinador/106/ceg.jpg"></a>
+              </div>
+              <div>
+                  <!-- <img src="../rio-gastronomia/Divisoria01.png" style="width: 100%;"> -->
+                  <h2 class="cor_evento">Patrocínio</h2>
+                  <a href="https://www.brahma.com.br/" target="_blank"><img title="Brahma Extra" alt="Brahma Extra" src="http://oglobo-eventos.s3.amazonaws.com/evt_upload_statics/11/patrocinador/102/Brahma.png"></a>
+                  <a href="https://www.paodeacucar.com/" target="_blank"><img title="Pão de Açúcar" alt="Pão de Açúcar" src="http://oglobo-eventos.s3.amazonaws.com/evt_upload_statics/11/patrocinador/121/paodeacucarmenor.png"></a>
+                  <a href="https://www.sebrae.com.br/" target="_blank"><img title="Sebrae" alt="Sebrae" src="http://oglobo-eventos.s3.amazonaws.com/evt_upload_statics/11/patrocinador/104/sebrae.png"></a>
+              </div>
+          </div>
+
+
+          <footer class="main-footer" id="mainFooter">
+            <div class="sombra-in link-none blue" >
+            <h1><a style="color:white;" href="https://oglobo.globo.com/">O GLOBO</a>
+              <span style="float:right;margin:10px 10px;font-size:0.5em;">SENAC RJ</span></h1>
+            </div>
+            <div class="bottom-footer">
+              <h3>Realização:</h3>
+            </div>
+            </div>
+          </footer>
+
+        </div> <!-- Div do Wrapper -->
+
+
+        <!-- Início: menu -->
+        <div class="open-menu" style="display:none" id="mySidebar">
+          <button class="button" onclick="jsClose()" style="float: right;margin:10px;width:20px;height:20px;">&times;</button>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        </div>
+        <!-- Fim: menu -->
+      </div>
+      <script src="openCloseMenu.js" type="text/javascript"></script>
+      </body>
+    </html>
